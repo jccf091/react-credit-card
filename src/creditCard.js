@@ -108,7 +108,7 @@ class CreditCard extends React.Component {
       if (!creditcard.validate(this.state.CardNumber)) {
           this.setState({
               errorCardNumber: 'error',
-              textErrorCardNumber: 'Número de cartão inválido'
+              textErrorCardNumber: 'Invalid card number'
           });
           this.state.validateNumber = false;
       }
@@ -120,7 +120,7 @@ class CreditCard extends React.Component {
       if (this.state.CardNumber == '') {
           this.setState({
               errorCardNumber: 'error',
-              textErrorCardNumber: 'Digite número do cartão'
+              textErrorCardNumber: 'Enter card number'
           });
       }
     };
@@ -136,7 +136,7 @@ class CreditCard extends React.Component {
         else {
             this.setState({
                 errorHolderName: 'error',
-                textErrorHolderName: 'Digite corretamente nome do titular'
+                textErrorHolderName: 'Enter correctly holder name'
             });
             this.state.validateName = false;
         }
@@ -153,7 +153,7 @@ class CreditCard extends React.Component {
         else {
             this.setState({
                 errorExpire: 'error',
-                textErrorExpire: 'Data de válidade errada'
+                textErrorExpire: 'Expiration date invalid'
             });
             this.state.validateExpire = false;
         }
@@ -185,7 +185,7 @@ class CreditCard extends React.Component {
           else {
               this.setState({
                   errorCvvNumber: 'error',
-                  textErrorCvvNumber: 'Código de segurança incorreto'
+                  textErrorCvvNumber: 'Incorrect security code'
               });
               this.state.validateCvv = false;
           }
@@ -193,7 +193,7 @@ class CreditCard extends React.Component {
         else {
             this.setState({
                 errorCvvNumber: 'error',
-                textErrorCvvNumber: 'Digite o código de segurança'
+                textErrorCvvNumber: 'Enter security code'
             });
             this.state.validateCvv = false;
         }
@@ -293,7 +293,7 @@ class CreditCard extends React.Component {
               <form className="ds-payment-form">
                   <div className={classnames('grid large-100', this.state.errorCardNumber)}>
                       <input
-                          placeholder="Número cartão"
+                          placeholder="Card Number"
                           type="text"
                           name="CardNumber"
                           value={this.state.CardNumber}
@@ -308,7 +308,7 @@ class CreditCard extends React.Component {
 
                   <div className={classnames('grid large-100', this.state.errorHolderName)}>
                       <input
-                          placeholder="Nome (igual no cartão)"
+                          placeholder="Card Holder Name"
                           value={this.state.HolderName}
                           type="text"
                           name="HolderName"
@@ -324,7 +324,7 @@ class CreditCard extends React.Component {
 
                   <div className={classnames('grid large-60 medium-60 small-60', this.state.errorExpire)}>
                       <input
-                          placeholder="Validade (MM/AA)"
+                          placeholder="Expiration Date (MM/AA)"
                           type="text"
                           name="CCexpiry"
                           value={this.state.CCexpiry}
