@@ -1,6 +1,6 @@
 {
-  "name": "@descomplica/react-credit-card",
-  "version": "1.0.4",
+  "name": "@jccf091/react-credit-card",
+  "version": "1.0.5",
   "description": "A Simple React component Credit Card",
   "main": "./dist/react-credit-card.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/descomplica/react-credit-card"
+    "url": "https://github.com/jccf091/react-credit-card"
   },
   "keywords": [
     "react",
@@ -21,6 +21,13 @@
   ],
   "author": "Giovanni Keppelen <giovanni.keppelen@descomplica.com.br>",
   "license": "GNU",
+  "dependencies": {
+    "react": "0.14.6",
+    "react-dom": "0.14.6",
+    "react-select": "^0.7.0",
+    "creditcard": "0.1.2",
+    "classnames": "2.2.3"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "5.8.23",
@@ -44,14 +51,9 @@
     "postcss-loader": "^0.6.0",
     "react-addons-test-utils": "0.14.x",
     "react-css-modules": "^3.5.0",
-    "react-dom": "0.14.x",
-    "react-select": "^0.7.0",
     "sass-loader": "^3.0.0",
     "style-loader": "0.12.x",
     "webpack": "1.12.x",
     "webpack-dev-server": "1.12.x"
-  },
-  "peerDependencies": {
-    "react": "^0.14.x"
   }
 }
